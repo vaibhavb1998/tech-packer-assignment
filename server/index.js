@@ -1,5 +1,4 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -17,17 +16,6 @@ app.use(
 
 // cors
 app.use(cors());
-
-// connect mongodb
-mongoose
-  .connect(process.env.MONGOURL, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  })
-  .then(() =>
-    console.info("MongoDB Successfully Connected.", process.env.MONGOURL)
-  )
-  .catch((err) => console.error("MongoDB connection error: ", err));
 
 app.get("/ping", (req, res) => res.send("pong"));
 
