@@ -26,6 +26,15 @@ app.use("/api/templates", templates);
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Server up and running on port ${port}!`));
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
 app.use(function (err, req, res, next) {
   console.error(err.message);
   if (!err.statusCode) err.statusCode = 500;
