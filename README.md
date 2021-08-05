@@ -12,7 +12,7 @@ First clone this repository.
 git clone https://github.com/vaibhavb1998/tech-packer-assignment.git
 ```
 
-Open the application director
+Open the application directory
 
 ```bash
 cd tech-packer-assignment
