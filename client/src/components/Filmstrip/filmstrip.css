@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 
-.prev:disabled .thumbnail, .next:disabled .thumbnail {
+.prev:disabled img, .next:disabled img {
     opacity: 0.4;
     cursor: auto;
 }
