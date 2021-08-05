@@ -12,6 +12,12 @@ First clone this repository.
 git clone https://github.com/vaibhavb1998/tech-packer-assignment.git
 ```
 
+Open the application director
+
+```bash
+cd tech-packer-assignment
+```
+
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
 
 ```bash
