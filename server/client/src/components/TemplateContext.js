@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext } from "react";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
 export const TemplateContext = createContext();
 
@@ -18,7 +19,7 @@ export const TemplateProvider = (props) => {
   const fetchTemplates = async () => {
     const {
       data: { templates },
-    } = await axios.get("http://localhost:3001/api/templates");
+    } = await axios.get(`${BACKEND_URL}/api/templates`);
 
     setTemplates(templates);
   };
