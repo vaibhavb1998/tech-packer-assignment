@@ -1,0 +1,22 @@
+.metadata {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.metadata div {
+    width: 80%;
+}
+
+.metadata .title {
+    background: #555;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    font-weight: normal;
+}
+
+.meta-item {
+    margin: 10px 0;
+}

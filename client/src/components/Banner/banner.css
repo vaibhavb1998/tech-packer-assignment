@@ -1,0 +1,12 @@
+.banner {
+    height: 380px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner img {
+    height: 340px;
+    width: 340px;
+}

@@ -1,0 +1,38 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    min-height: 300px;
+    width: 860px;
+}
+
+.container-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.selected-template-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 20px;
+}
+
+.selected-template-details .banner, .selected-template-details .metadata {
+    flex: 0 0 50%;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
